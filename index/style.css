@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F4F4F4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: #DCDCDC;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: #DCDCDC;
+    
+}
+
+.nav-links {
+    list-style: none;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+
