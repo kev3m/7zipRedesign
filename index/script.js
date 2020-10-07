@@ -8,6 +8,7 @@ const navSlide = () => {
 /* Esconder barra */
 burguer.addEventListener('click', () => {
     burguer.classList.toggle('active');
+    nav.classList.toggle('active');
 })
 
 }
