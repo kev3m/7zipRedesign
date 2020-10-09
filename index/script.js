@@ -14,7 +14,7 @@ const navSlide = () => {
 }
 navSlide();
 
-/* Animação botão download */
+/* Animação botão download 
 const downbutton = document.querySelectorAll('.download');
 downbutton.forEach(btn => {
     btn.addEventListener('click', function (e) {
@@ -31,3 +31,5 @@ downbutton.forEach(btn => {
         }, 1000);
     })
 })
+*/
+
