@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <title>7-Zip</title>
+    <link rel="shortcut icon" href="/7zip redesign/images/7zip shortcut icon.png">
 
 </head>
 
@@ -59,14 +60,113 @@
         </section>
         <section class="bodyB">
             <div class="cta-ft">
-                <button class="features animate__animated animate__flipInX">FEATURES</button>
-                <button class="sdk  ">SDK</button>
+                <button class="features ">FEATURES</button>
+                <button class="sdk ">SDK</button>
             </div>
 
         </section>
-        <img src="/7zip redesign/images/zip.png" alt="oflat" srcset="">
-        <img src="/7zip redesign/images/flat zip.png" alt="tflat" srcset="">
+        <div class="zips">
+            <img class="tflat" src="/7zip redesign/images/zip.png" alt="tflat" srcset="">
+            <!--<img class="oflat" src="/7zip redesign/images/flat zip.png" alt="oflat" srcset="">
+        -->
+            <img class="zipinv" src="/7zip redesign/images/zipinv.png" alt="zipinv" srcset="">
+        </div>
+        <section class="sdk-ft">
+            <div class="ftcheck">
+                <div class="line1">
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>Open architecture</p>
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>High compression ratio</p>
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>Strong AES-256 encryption</p>
+                </div>
+                <div class="line2">
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>Supporting files with sizes up to 16000000 TB</p>
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>Unicode file names </p>
+                    <img class="check" src="/7zip redesign/images/icons/checked.png" alt="checked" srcset="">
+                    <p>Solid compressing</p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-container">
+            <div class="faqpres">
+                <img class="question" src="/7zip redesign/images/icons/question-mark.png" alt="question" srcset="">
+                <p>Frequently Asked Questions (FAQ)</p>
+            </div>
+        </section>
+
+        
+        <section class="accordion-sec">
+            <div class="accordion-container">
+                <div class="accordion-item" id="question1">
+                    <a class="accordion-link" href="#question1">
+                        Can I use 7-Zip in a commercial organization?
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        Yes, 7-Zip is free software. You can use it on any computer. You don't need to register or pay
+                        for 7-Zip.
+                    </div>
+                </div>
+                
+                
+                
+                <div class="accordion-item" id="question2">
+                    <a class="accordion-link" href="#question2">
+                        Why can't 7-Zip open some ZIP archives?
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        In 99% of these cases it means that the archive contains incorrect headers. Other ZIP programs
+                        can
+                        open some archives with incorrect headers, since these programs just ignore errors.
+                        If you have such archive, please don't call the 7-Zip developers about it. Instead try to find
+                        the
+                        program that was used to create the archive and inform the developers of that program that their
+                        software is not ZIP-compatible.
+
+                    </div>
+                </div>    
+
+                    <div class="accordion-item" id="question3">
+                        <a class="accordion-link" href="#question3">
+                            Why can't 7-Zip open some RAR archives?
+                            <ion-icon class="chevron-down-outline"  name="chevron-down-outline"></ion-icon>
+                            <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                        </a>
+                        <div class="answer">
+                            7-Zip 9.20 supports RAR 2/3/4 formats only and doesn't support RAR5 archives. But latest
+                            versions of 7-Zip supports RAR5 archives.
+                        </div>
+                    </div>
+
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                How can I recover corrupted 7z archive?
+                                <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                                <ion-icon class="remove-outline" name="remove-outline"></ion-icon>
+                            </a>
+                            <div class="answer">
+                                There are some possible cases when archive is corrupted:
+                                <p class="cases">You can open archive and you can see the list of files, but when you
+                                    press Extract or
+                                    Test command, there are some errors: Data Error or CRC Error.</p>
+                                <p class="cases">When you open archive, you get message "Can not open file 'a.7z' as
+                                    archive"</p>
+                            </div>
+                        </div>
+                    
+        </section>
+
+
+
     </main>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 
