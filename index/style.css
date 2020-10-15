@@ -325,7 +325,7 @@ justify-content: center;
 width: 100%;
 height: 100vh;
 display: flex;
-height: 100vh;
+height: 80vh;
 align-items: center;
 justify-content: center;
 }
@@ -359,6 +359,14 @@ justify-content: center;
 color: #4B4A4A;
 padding: 0.5rem;
 }
+.accordion-link p {
+color:#4B4A4A;
+font-weight: 500;
+
+}
+.answer p {
+    color: #817676;
+}
 
 .remove-outline {
     display: none;
@@ -367,13 +375,26 @@ padding: 0.5rem;
     max-height: 0;
     overflow: hidden;
     position: relative;
-    
+    transition: max-height 700ms;
 }
 .answer::before{
     content: "";
     position: absolute;
-
+    
 }
+.accordion-item:target .answer{
+max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .chevron-down-outline {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .remove-outline{
+    display: block;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     body {
